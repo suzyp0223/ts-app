@@ -11,14 +11,14 @@ export default function Controlled(): React.ReactElement {
     { key: 3, value: "mango" },
   ];
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setName(event.target.value);
-  };
-  const handleChangeEssay = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
-    setEssay(event.target.value);
-  };
-  const handleChangeFlavor = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setFlavor(event.target.value);
+  const handleChange = (event: React.ChangeEvent) => {
+    if (event.target instanceof HTMLInputElement) {
+      setName(event.target.value);
+    } else if (event.target instanceof HTMLTextAreaElement) {
+      setEssay(event.target.value);
+    } else if (event.target instanceof HTMLSelectElement) {
+      setFlavor(event.target.value);
+    }
   };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -32,19 +32,18 @@ export default function Controlled(): React.ReactElement {
       <label>
         Name:
         <input type="text" value={name} onChange={handleChange} />
-        {/* <input type="submit" value="Submit" /> */}
       </label>
       <br />
       <br />
       <label>
         Essay:
-        <textarea value={essay} onChange={handleChangeEssay} />
+        <textarea value={essay} onChange={handleChange} />
       </label>
       <br />
       <br />
       <label>
         Pick your favorite flavor:
-        <select value={flavor} onChange={handleChangeFlavor}>
+        <select value={flavor} onChange={handleChange}>
           {flavorOptions.map(option => (
             <option key={option.key} value={option.value}>
               {option.value}

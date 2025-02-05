@@ -1,7 +1,7 @@
 // /* eslint-disable prettier/prettier */
 // import React from "react";
 
-// export default class ClassClock extends React.Component {
+// class ClassClock extends React.Component {
 //   constructor(props) {
 //     // console.log('constructor: ');
 //     super(props);
@@ -11,12 +11,12 @@
 
 //   componentDidMount() {
 //     // console.log('componentDidMount: ');
-//     this.timerID = setInterval(() => this.tick(), 500000);
+//     // this.timerID = setInterval(() => this.tick(), 500000);
 //   }
 
 //   componentWillUnmount() {
 //     // console.log('componentWillUnmount: ');
-//     clearInterval(this.timerID);
+//     // clearInterval(this.timerID);
 //   }
 
 //   componentDidUpdate() {
@@ -39,3 +39,5 @@
 //     );
 //   }
 // }
+
+// export default ClassClock;

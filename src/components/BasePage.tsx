@@ -8,7 +8,7 @@ import React from "react";
 // import Event from "./2-7/Event";
 // import Greeting from "./2-8/Greeting";
 // import List from "./2-9/List";
-// import Controlled from "./2-10/Controlled";
+import Controlled from "./2-10/Controlled";
 import UnControlled from "./2-10/UnControlled";
 
 function BasePage() {
@@ -38,7 +38,7 @@ function BasePage() {
       {/* <Event /> */}
       {/* <Greeting /> */}
       {/* <List /> */}
-      {/* <Controlled /> */}
+      <Controlled />
       <UnControlled />
     </>
   );
