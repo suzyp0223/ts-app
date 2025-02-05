@@ -14,8 +14,11 @@
   ],
   "rules": {
     "prettier/prettier": "error",
-    "react/react-in-jsx-scope": "off",
-    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    // "react/react-in-jsx-scope": "off",
+    // 미사용 변수 경고 끄기 - no-unused-vars
+    // "@typescript-eslint/no-unused-vars":
+    // "off",
+    // ["error", { "argsIgnorePattern": "^_" }],
     "import/order": [
       2, // 2=error의미 1=warn 0=off비활성화
       {
