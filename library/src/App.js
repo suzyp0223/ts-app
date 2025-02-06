@@ -1,13 +1,11 @@
-import './App.css';
+import "./App.css";
 
-import Moment from './3-1/Moment';
-import Day from './3-1/Day';
+import Mocking from "./3-4/Mocking.jsx";
 
 function App() {
   return (
     <div className="App">
-      {/* <Moment /> */}
-      <Day />
+      <Mocking />
     </div>
   );
 }

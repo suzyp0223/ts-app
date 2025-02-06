@@ -5,9 +5,9 @@ import { useRef } from 'react';
 export default function Moment() {
   const momentDate = moment();
   const newMomentDate = momentDate.add(1, "week");
-  const cloneMomentDate = newMomentDate.clone().add(1, "week");
+       const cloneMomentDate = newMomentDate.clone().add(1, "week");
 
-  const [day, setDay] = useState('');
+        const [day, setDay] = useState('');
   const birthDayRef = useRef(null);
 
   const handleBirthDayChange = (e) => {
@@ -46,7 +46,7 @@ export default function Moment() {
       </div>
         <div>
           <div>2017년 1월 1일과 2025년 02월 05일은 몇일 차이일까요?</div>
-          <div>{moment("2025-02-05 3:00").diff(moment("2017-01-01 3:00"), "days")}</div>
+          <div>{moment("2017-01-01 3:00").diff(moment("2017-01-01 3:00"), "days")}</div>
         </div>
     </div>
   )

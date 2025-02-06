@@ -3,12 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^5.6.0",
+    "@emotion/css": "^11.13.5",
+    "@emotion/styled": "^11.14.0",
+    "@jridgewell/sourcemap-codec": "^1.5.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "antd": "^5.23.4",
     "cra-template": "1.2.0",
     "dayjs": "^1.11.13",
     "moment-timezone": "^0.5.47",
+    "onsenui": "^2.12.8",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
+    "react-onsenui": "^1.13.3",
+    "react-redux": "^9.2.0",
+    "react-scripts": "^5.0.1",
+    "styled-components": "^6.1.15",
+    "svgo": "^3.3.2",
     "web-vitals": "^4.2.4"
   },
   "scripts": {
@@ -33,6 +44,30 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.7",
+    "@babel/eslint-parser": "^7.26.5",
+    "@emotion/babel-plugin": "^11.13.5",
+    "@eslint/eslintrc": "^3.2.0",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.1.6",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-import-resolver-typescript": "^3.7.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "globals": "^15.14.0",
+    "msw": "^2.7.0",
+    "prettier": "^3.4.2"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
     ]
   }
 }
